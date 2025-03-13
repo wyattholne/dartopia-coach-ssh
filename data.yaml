@@ -1,0 +1,13 @@
+train: s3://dartopia-coach-connect/Darts.v2i.yolov11/train/images
+val: s3://dartopia-coach-connect/Darts.v2i.yolov11/valid/images
+test: s3://dartopia-coach-connect/Darts.v2i.yolov11/test/images
+
+nc: 7
+names: ['NUMBER', 'SEG', 'double_ring', 'triple_ring', 'bullseye', 'dart', 'dartboard']
+
+roboflow:
+  workspace: score-lpfmv
+  project: darts-bjj98
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/score-lpfmv/darts-bjj98/dataset/2
